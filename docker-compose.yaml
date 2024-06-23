@@ -1,0 +1,12 @@
+services:
+
+  db:
+    build:
+      context: .
+      dockerfile: src/database/Dockerfile
+    environment:
+      SA_PASSWORD: "YourStrongPassw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1401:1433"
+      
