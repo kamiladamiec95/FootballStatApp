@@ -1,10 +1,12 @@
 import src.menu as menu
+import src.ETL as ETL
 
 class Manager:
 
     def __init__(self):
         self.is_running = True
         self.choices = {
+             "3": ETL.add_leagues_from_file,
              "5": self.display_sub_menu_settings,
              "6": self.quit
         }
