@@ -1,4 +1,5 @@
 import json
+import database.db as db
 
 CONFIG_FILE = "../config.json"
 
