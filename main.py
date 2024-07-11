@@ -6,6 +6,7 @@ class Manager:
     def __init__(self):
         self.is_running = True
         self.choices = {
+             "1": ETL.read_and_archive_raw_data_json,
              "3": ETL.add_leagues_from_file,
              "5": self.display_sub_menu_settings,
              "6": self.quit
